@@ -1,0 +1,10 @@
+[project]
+name = "BernSSAAGalaxiesOsborn"
+version = "0.1.0"
+description = "The Galaxies portion of the Galaxies and the Distant Universe series for the University of Bern Space Sciences & Astronomy masters"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "mkslides>=2.0.0",
+]

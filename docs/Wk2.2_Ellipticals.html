@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        
+            <link rel="icon" href="slide_data/data/unibe_galaxy_icon.ico">
+        
+
+        <link rel="stylesheet" href="mkslides-assets/reveal-js/dist/reveal.css" />
+
+        
+            <link rel="stylesheet" href="slide_data/data/hohgent_slides_custom.css" />
+        
+        
+            <link rel="stylesheet" href="mkslides-assets/highlight-js-themes/vs.css" />
+        
+
+        
+            
+        
+            
+        
+
+        
+            <title>Slides</title>
+        
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown
+                
+                    data-separator="^\s*---\s*$"
+                
+                    data-separator-vertical="^\s*-v-\s*$"
+                
+                    data-separator-notes="^Notes?:"
+                
+                    data-charset="utf-8"
+                
+                >
+                    <!-- The markdown must be placed to the whole left to prevent indentation issues like https://github.com/MartenBE/mkslides/issues/52 -->
+                    <textarea data-template>
+# Elliptical Galaxies, Dwarfs, and Scaling Relations
+
+<img src="../slide_data/slide_images/NGC_1316_elliptical.png" class="r-stretch" />
+---
+<ul class="contents-list">
+  <li><a href="#/part-1"><strong>Part 1:</strong> Morphological Classification of Ellipticals</a></li>
+  <li><a href="#/part-2"><strong>Part 2:</strong> Intrinsic 3D Shapes & Kinematic Support</a></li>
+  <li><a href="#/part-3"><strong>Part 3:</strong> Other Features of Ellipticals</a></li>
+  <li><a href="#/part-4"><strong>Part 4:</strong> Galaxy Demographics & Locations</a></li>
+  <li><a href="#/part-5"><strong>Part 5:</strong> The Low-Mass Zoo: Dwarf Galaxies</a></li>
+  <li><a href="#/part-6"><strong>Part 6:</strong> Scaling relations (basics)</a></li>
+  <li><a href="#/part-7"><strong>Part 7:</strong> Scaling relations (velocities)</a></li>
+  <li><a href="#/part-8"><strong>Part 8:</strong> Scaling velocities (fundamental plane)</a></li>
+  <li><a href="#/part-9"><strong>Part 9:</strong> Scaling Relations (Mass-Size)</a></li>
+  <li><a href="#/part-10"><strong>Part 10:</strong> Impact of scaling relations</a></li>
+</ul>
+---
+<h2 id="part-1" class="slide-part-title">Part 1: Morphological Classification of Ellipticals</h2>
+
+<!--
+triaxial spheroid = sausage/disc/sphere; denser cores
+## Observed shape
+- $10\times(1-\frac{1}{b})$
+- E0 = round 
+- Typical maximum of E7
+-->
+
+- <span class="fragment">**Hubble Ellipticity Index ($E0 \text{--} E7$):** Classified by apparent major ($a$) and minor ($b$) axis ratios:</span>
+  <span class="fragment">$$E = 10 \left(1 - \frac{b}{a}\right)$$</span>
+- <span class="fragment">**Flattened Systems ($E4 \text{--} E8$ / $S0$):** High ellipticity often indicates edge-on fast-rotating disks or lenticular galaxies without visible arms.</span>
+- <span class="fragment">**Compact Ellipticals ($cE$):** Small, dense, high-surface-brightness systems (e.g., M32); formed primarily as tidal remnants stripped by a massive neighbor.</span>
+- <span class="fragment">**Central Dominant Galaxies ($cD$):** Supergiant ellipticals surrounded by vast, faint, extended stellar envelopes. Usually found at the centers of rich clusters.</span>
+
+---
+
+<h2 id="part-2" class="slide-part-title">Part 2: Intrinsic 3D Shapes & Kinematic Support</h2>
+
+<!--<img src="../slide_data/slide_images/image_agent_tag_783226219513890030" class="r-stretch" />-->
+
+- <span class="fragment">**De-projecting Ellipticity:** Apparent 2D shape depends on intrinsic 3D semi-axes ($a \ge b \ge c$) and inclination.</span>
+- <span class="fragment">**The Ellipsoidal Families:**</span>
+  * <span class="fragment">**Oblate (Disc-like):** $a = b > c$ (flattened along the axis of rotation).</span>
+  * <span class="fragment">**Prolate (Sausage-like):** $a > b = c$ (elongated along the major axis).</span>
+  * <span class="fragment">**Triaxial (General):** $a > b > c$ (three distinct principal axes; orbits can be non-planar).</span>
+
+-v-
+
+## Kinematics:
+- Stars in a gravity well have some balance of:
+  - Coherent **rotational velocity** ($V_{\rm rot}$) - from the difference in mean doppler shift across the galaxy
+  - Random **anisotropic stellar "pressure"** ($\sigma$) - from the broadening in individual absorption lines (corrected for instrumental broadening)
+- The $V/\sigma$ ratio is a key divider between disc-like and elliptical galaxies. 
+  - Faint/low-mass ellipticals are isotropic oblate rotators ($V/\sigma > 1$)
+  - <span class="fragment">Giant ellipticals are slow-rotating, pressure-supported systems ($V/\sigma \ll 1$), often with triaxial shapes.</span>
+
+---
+<h2 id="part-3" class="slide-part-title">Part 3: Other Features of Ellipticals</h2>
+
+- **Stellar populations**
+  - <span class="fragment">Dominated by Population II stars</span>
+  - <span class="fragment">Very little gas between stars</span>
+  - <span class="fragment">Very low star formation rates</span>
+- <span class="fragment">**Supermassive Black Holes**</span>
+  - <span class="fragment">Most (all?) ellipticals host a large central black hole (some with jets)</span>
+- <span class="fragment">**Globular Clusters** (dense/old stellar clusters):</span>
+  - <span class="fragment">Nearby ellipticals like M87 show 100x that of the Milky Way</span>
+
+<!--# 1) Elliptical morphology
+## E4-E7 or S0?
+- Highly elongated ellipticals... may not be elliptical.
+- They are instead lenticular galaxies viewed edge-on-->
+---
+
+<h2 id="part-4" class="slide-part-title">Part 4: Galaxy Demographics & Locations</h2>
+
+<img src="../slide_data/slide_images/Galaxy_mass_function.png" class="r-stretch" />
+
+- <span class="fragment">By **Number Density ($\Phi$)**: Late-type spirals (Sab–Sd) and dwarf/irregular galaxies (Sd–Irr, dE) dominate counts.</span>
+-v-
+- <span class="fragment">By **Stellar Mass Budget ($\rho_*$)**: Spheroid-dominated elliptical galaxies hold the majority of mass ($\sim 71\%$ of total stellar mass resides in Es + S0/Sas).</span>
+- <span class="fragment">When split only by bulge- vs disc-dominated (i.e. ellipticals & bulge-dominated lenticulars vs spirals), the nearby universe shows a ~50/50 split by mass</span>
+- Best statistics from [GAMA](https://arxiv.org/abs/1407.7555) survey.
+
+-v-
+
+<!--<img src="../slide_data/slide_images/image_agent_tag_783226219513890192" class="r-stretch" />-->
+- The local density of galaxies can vary from sparse environments to large superclusters.
+- <span class="fragment">**The Morphology-Density Relation (Dressler 1980):** Spiral galaxies dominate low-density field environments; $S0$ and $E$ galaxies dominate densest regions of clusters (80-90%).</span>
+- <span class="fragment">**$cD$ Galaxies at Potential Well Minima:** Located at the exact gravitational centers of massive clusters (e.g., M87 in Virgo, ESO 137-001).</span>
+- <span class="fragment">**Galactic Cannibalism & Intracluster Light (ICL):** $cD$ envelopes grow by accreting smaller cluster members; tidal disruption scatters stars into the extended ICL halo.</span>
+<!--## Other galaxies
+- Dwarf Ellipticals (dEs)
+- cE (compact elliptical e.g. M32)
+- S0, ES (intermediate discs) and E
+- cD (central diffuse)
+- gE - giant ellipticals-->
+
+
+---
+
+<h2 id="part-5" class="slide-part-title">Part 5: The Low-Mass Zoo: Dwarf Galaxies</h2>
+
+<img src="../slide_data/slide_images/Dwarf_Galaxies_examples.png" class="r-stretch" />
+
+-v-
+
+- <span class="fragment">**Dwarf Ellipticals ($dE$) & Spheroidals ($dSph$):** Gas-poor, smooth stellar distributions ($M_V > -18$). $dSph$ systems are extreme, low-surface-brightness extensions ($M_V > -14$).</span>
+- <span class="fragment">**Ultra-Faint Dwarfs ($UFDs$):** The faintest, most dark-matter-dominated systems known ($L \sim 10^2\text{--}10^5 L_\odot$, $M/L > 100\text{--}1000$).</span>
+- <span class="fragment">**Ultra-Diffuse Galaxies ($UDGs$):** Dwarf-like stellar mass ($10^7\text{--}10^8 M_\odot$) expanded over a Milky Way-sized spatial radius ($R_e \ge 1.5\text{ kpc}$).</span>
+- <span class="fragment">**Dwarf Irregulars ($dIrr$):** Gas-rich, actively star-forming dwarfs with irregular morphologies and low metallicities.</span>
+
+---
+<h2 id="part-6" class="slide-part-title">Part 6: Scaling relations (basics)</h2>
+
+- <span class="fragment">The many properties of galaxies (size, mass, rotational speed/velocity dispersion, luminosity, etc) are not infinitely variable.</span>
+- <span class="fragment">Instead there exists underlying physics which produces strong correlations between parameters.</span>
+- <span class="fragment">These are modelled via "scaling relations"</span>
+- <span class="fragment">For example, one scaling relation is a constant **mass-to-light ratio** (i.e. $M \propto L$)</span>
+- <span class="fragment">This is understandable as higher stellar mass must produce higher luminosities.</span>
+
+-v-
+
+### Red Sequence
+
+<img src="../slide_data/slide_images/color_magnitude_plot.png" class="r-stretch" />
+
+- Ellipticals show a clear relationship between total mass & colour
+
+---
+
+<h2 id="part-7" class="slide-part-title">Part 7: Scaling relations (velocities)</h2>
+
+### Tully-Fisher
+
+<img src="../slide_data/slide_images/tully_fisher.jpg" class="r-stretch" />
+
+- In spiral galaxies, rotational velocity correlates strongly with luminosity: $L \propto \nu^\alpha_{\rm max}$, where $\alpha \approx 4$ in spirals
+
+<!-- Connects total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed ($V_{\text{max}}$):- $$L \propto V_{\text{max}}^{\alpha} \quad (\alpha \approx 3\text{--}4)$$-->
+-v-
+### Tully-Fisher
+- Tully & Fisher (1977) realised that total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed
+- Assuming constant mass-to-light ratio ($M = cL$), rotational velocity defined as $\nu_{\rm max} = \sqrt{GM/R}$, and mean surface brightness $\mu = L/R^2$, what should alpha be?
+- $R^2 = G^2M^2/\nu^4_{\rm max}; hance R^2 = cG^2L^2/\nu^4_{\rm max}$
+- So $L = \langle I_e \rangle R^2$; $L = \langle I_e \rangle cG^2L^2/\nu^4_{\rm max}$; $L = \nu^4_{\rm max}/(cG^2\langle I_e \rangle)$
+- As $c$ (mass-to-light proportionality) and $\langle I_e \rangle$ (surface brightness ratio) can be assumed constant for all spirals, $L \propto \nu^4_{\rm max}$.
+
+-v-
+
+## Faber-Jackson
+
+<img src="../slide_data/slide_images/Tully_Fischer.png" class="r-stretch" />
+
+- In **elliptical galaxies**, faster velocity _dispersions_ in their cores (\sigma_0) correlate with higher luminosities: $L \propto \sigma_0^\gamma \quad (\gamma \approx 4)$
+- This can similarly be derived from expected velocities due to galaxy masses.
+
+-v-
+## Physical Basis
+
+- As with Tully-Fisher, Faber-Jackson can be derived by combining:
+  - <span class="fragment">The **virial theorem** - e.g. using equilibrium in gravitational potential ($G M / R \propto V^2$); and</span>
+  - <span class="fragment">A constant (or slowly varying) stellar mass-to-light ratio ($M/L$)</span>
+  <!-- Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
+  - Kinetic Energy is $K = 3/2 M \sigma^2$
+  - Must be balanced, e.g. $2K+U = 0$; hence $\sigma^2 = -\frac{1}{5}\frac{GM}{R}$
+  -->
+---
+
+<h2 id="part-8" class="slide-part-title">Part 8: Scaling velocities (fundamental plane)</h2>
+
+- The brightness profiles of ellipticals  makes calculating the _total flux_ difficult
+- It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.
+- Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \langle I_e \rangle_e^{-0.66}$ - larger ellipticals have lower surface brightnesses.
+- Using both surface brightnesses ($\langle I_e \rangle_e$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \langle I_e \rangle_e^{-0.85}$.
+- <span class="fragment">In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \langle I_e \rangle + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\text{--}-0.90$)</span>
+
+-v-
+
+## Fundamental plane
+
+<img src="../slide_data/slide_images/mFP_vp_rotate.gif" class="r-stretch" />
+
+- This can be thought of a third dimension to the Faber-Jackson and is a _better predictor_ of galaxy size/luminosity
+
+-v-
+### Understanding the "Tilt":
+- Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.
+- The discrepancy ("tilt") reflects systematic variations in $M/L$:
+  - <span class="fragment">$M/L$ of ellipticals increases with galaxy stellar mass.</span>
+
+<!--
+## Scaling relations
+- Scaling relations can now be inverted to produce the expected luminosity given other measurements
+- This then produces a distance estimate (distance modulus), independent to Hubble's law!-->
+
+---
+<h2 id="part-9" class="slide-part-title">Part 9: Scaling Relations (Mass-Size)</h2>
+
+- <span class="fragment">**Mass-Size Scaling ($M_* \text{--} R_e$):** Displays a structural regime shift around $M_* \sim 3 \times 10^{10} M_\odot$:</span>
+  * <span class="fragment">**Low-Mass Spheroids ($M_* < 10^{10.5} M_\odot$):** Shallow size growth ($R_e \propto M_*^{0.1\text{--}0.2}$).</span>
+  * <span class="fragment">**Massive Ellipticals ($M_* > 10^{11} M_\odot$):** Steep size expansion ($R_e \propto M_*^{0.6\text{--}0.8}$).</span>
+- <span class="fragment">**Sérsic Index Scaling ($n \text{--} L$):** Central concentration (Sérsic index $n$) scales smoothly with total luminosity ($L \propto n^3$), unifying faint dwarf ellipticals and giant ellipticals within a single structural framework.</span>
+
+---
+<h2 id="part-10" class="slide-part-title">Part 10: Impact of scaling relations</h2>
+
+#### Standard candles
+- <span class="fragment">Relations between parameters enable us to convert one observed parameter into another</span>
+  - <span class="fragment">e.g. velocity disperson $\sigma$ to mass (and therefore to intrinsic luminosity).</span>
+  - <span class="fragment">This can anchor a standard candle (e.g. for distance, and even $H_0$ determination)</span>
+<span class="fragment">#### Unresolved galaxies</span>
+- <span class="fragment">Enable us to apply information derived from resolved calaxies to distant galaxies without any spatial (e.g. $V$ or $\langle I_e \rangle$) information</span>
+<span class="fragment">#### Probe underlying physics</span>
+- <span class="fragment">For example, deviations of observed scaling laws from expectations as proof of unseen physics (Fundamental plane "tilt" due to increasing dark matter mass fraction in massive galaxies)</span>
+
+-v-
+### Next time
+
+Turn these observed properties of galaxiesm into understand how (and when) galaxies and stellar populations form...
+                    </textarea>
+                </section>
+            </div>
+        </div>
+        <script src="mkslides-assets/reveal-js/dist/reveal.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/highlight.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/markdown.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/math.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/notes.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/search.js"></script>
+        <script src="mkslides-assets/reveal-js/dist/plugin/zoom.js"></script>
+
+        
+            
+                
+                    
+                        <script src="https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.min.js"></script>
+                    
+                
+            
+                
+                    
+                        <script src="https://cdn.jsdelivr.net/npm/reveal-plantuml/dist/reveal-plantuml.min.js"></script>
+                    
+                
+            
+        
+
+        <script>
+            Reveal.initialize({
+                
+                    
+                        history: true,
+                    
+                        slideNumber: "c/t",
+                    
+                        height: 700,
+                    
+                        width: 960,
+                    
+                        transition: "fade",
+                    
+                        pdfSeparateFragments: false,
+                    
+                
+                plugins: [
+                    RevealMarkdown, // Must come before the other plugins so they can hook into the generated HTML.
+                    RevealHighlight,
+                    RevealMath.KaTeX,
+                    RevealNotes,
+                    RevealSearch,
+                    RevealZoom,
+
+                    
+                        
+                            
+                                RevealMermaid,
+                            
+                        
+                            
+                        
+                    
+                ],
+            });
+        </script>
+    </body>
+</html>
