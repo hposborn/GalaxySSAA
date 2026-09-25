@@ -96,7 +96,7 @@ def preprocess(md: str) -> str:
         if path.startswith('http'):
             src = path
         else:
-            src = f'../slide_data/slide_images/{path}'
+            src = f'slide_data/slide_images/{path}'
         return f'<img src="{src}" {extra_attrs} />'
 
     # 4. Handle [i=...] image macro (full stretch, with or without quotes)

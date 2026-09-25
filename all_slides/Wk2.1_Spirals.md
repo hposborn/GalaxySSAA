@@ -503,3 +503,15 @@ title: Spiral Galaxies and Morphological Classification
 - JWST has revealed well-formed, rotationally supported spirals occurring much earlier ($z > 3$) than predicted[+]
 - Speed drops in outer regions of young spirals - suggests young galaxy interiors more heavily dominated by gas \& stars not dark matter[+]
 <!-- Downsizing: Massive ellipticals completed their star formation early ($z > 2$), while late-type spirals continue star formation to the present epoch. [+]-->
+
+---
+[P "Additional resources"]
+
+Online:
+- [Galaxy Zoo](https://www.zooniverse.org/projects/zookeeper/galaxy-zoo)
+- [Dr Becky on Youtube](https://www.youtube.com/watch?v=qK0eCgob81k)
+
+Literature/Books:
+- [An introduction to Galaxies and Cosmology](https://dn720002.ca.archive.org/0/items/GalaxiesCosmologyS282JonesLambourne2003/S282%20An%20Introduction%20to%20Galaxies%20and%20Cosmology.pdf)
+- [Hidden lives of Galaxies](https://imagine.gsfc.nasa.gov/educators/galaxies/imagine/imagine_book.pdf)
+- [Galaxies through Space and Time (HST focus)](https://www.nasa.gov/wp-content/uploads/2019/08/hubblefocusgalaxies.pdf)
