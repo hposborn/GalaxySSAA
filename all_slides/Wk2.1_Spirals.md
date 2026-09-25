@@ -491,20 +491,19 @@ title: Spiral Galaxies and Morphological Classification
   - Autoencoders & self-supervised algorithms 
   - Group galaxy images without pre-existing human taxonomies. [+]
 
--v-
+---
 
 <!--# Key Scientific Discoveries from Modern Surveys-->
-[P "Key Scientific Discoveries from Modern Surveys"]
+<!--
 
 [i="https://upload.wikimedia.org/wikipedia/commons/b/b5/Morphology_density_relation.png"]
 
 - **Morphology-Density Relation**: Disk galaxies dominate low-density field environments, whereas dense cluster cores are dominated by S0 and Elliptical galaxies (Dressler 1980). [+]
 - **Secular Structural Growth**: Bars and spiral density waves account for up to 30% of central bulge mass assembly since $z \sim 1$. [+]
 - JWST has revealed well-formed, rotationally supported spirals occurring much earlier ($z > 3$) than predicted[+]
-- Speed drops in outer regions of young spirals - suggests young galaxy interiors more heavily dominated by gas \& stars not dark matter[+]
+- Speed drops in outer regions of young spirals - suggests young galaxy interiors more heavily dominated by gas \& stars not dark matter[+]-->
 <!-- Downsizing: Massive ellipticals completed their star formation early ($z > 2$), while late-type spirals continue star formation to the present epoch. [+]-->
 
----
 [P "Additional resources"]
 
 Online:
