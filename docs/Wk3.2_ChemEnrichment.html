@@ -46,37 +46,121 @@
                     <!-- The markdown must be placed to the whole left to prevent indentation issues like https://github.com/MartenBE/mkslides/issues/52 -->
                     <textarea data-template>
 # Chemical Enrichment and the Cosmic History of Star Formation
-
+<!--
 ---
 ## Topics covered
-1) Types of ellipticals (E0 = round to E9 = extended); cE (compact elliptical e.g. M32); cD (central diffuse)
-2) Shapes of ellipticals (triaxial spheroid = sausage/disc/sphere; denser cores - de Vaucouleurs profile)
-3) Stellar populations (old, pop 1;)
-4) Locations - esp cD = central dominant bright cluster galaxies in cluster cores.
-5) Dwarf galaxies
-6) Ultra-low surface brightness galaxies
-7) 
+1) Big bang nucleosynthesis
+2) Chemical Evolution Models Closed-box and leaky-box models, metal yields, and the accumulation of heavy elements over generations of stars.
+3) Stellar Nucleosynthesis Clocks: Distinct nucleosynthetic yields and timescales for core-collapse supernovae (prompt $\alpha$-elements like $\text{O}$, $\text{Mg}$, $\text{Si}$) versus Type Ia supernovae (delayed iron-peak elements like $\text{Fe}$)
+4) The Cosmic Star Formation Rate Density (SFRD): The Madau-Dickinson curve tracking the global star-formation rate density from the early universe ($z \approx 10$) to the present day ($z = 0$), peaking at the "cosmic noon" ($z \approx 2$)
+5) Mass-Metallicity Relation ($M_ - Z$):* The observed scaling between stellar mass, gas-phase metallicity, and outflow-driven galactic winds.-->
 
 ---
-# 1) Types of ellipticals
-E0 = round to E9 = extended); cE (compact elliptical e.g. M32); cD (central diffuse)
 
 ---
-# 2) Shapes of ellipticals
-triaxial spheroid = sausage/disc/sphere; denser cores - de Vaucouleurs profile
+
+[p "Cosmic Star Formation History"]
+
+# The Madau-Dickinson Paradigm
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Cosmic_Star_Formation_History.png" class="r-stretch" />
+
+- <span class="fragment">Cosmic Star Formation Rate Density ($\psi(z)$):</span>
+  - <span class="fragment">Rises during early epoch, peaks at "Cosmic Noon" ($z \approx 1.5\text{--}2.5$), followed by exponential drop ($10\times$ decrease to $z = 0$).</span>
+  - <span class="fragment">Over $50\%$ of total cosmic stellar mass was assembled during or before Cosmic Noon ($z > 1.3$).</span>
+- <span class="fragment">Multi-Wavelength Diagnostic Tracers:</span>
+  - <span class="fragment">Rest-frame UV (1500 Å): Traces massive OB stars ($\tau \lesssim 100\text{ Myr}$); requires heavy dust attenuation corrections.</span>
+  - <span class="fragment">Far-IR / Sub-mm (ALMA, Herschel): Measures dust-reprocessed thermal radiation from dust-obscured starbursts.</span>
+  - <span class="fragment">$\text{H}\alpha$ Emission: Recombination line tracing short-lived ionizing stars ($\tau \lesssim 10\text{ Myr}$).</span>
+
+-v-
+
+<span class="fragment">Stellar Mass Density AccumulationStellar Mass Growth ($\rho_*(z) = \int \psi(z) (1-R) \, dz$):</span>
+<span class="fragment">Total stellar mass density $\rho_*(z)$ grows monotonically, reaching $50\%$ of current local budget by $z \sim 1$.</span>
+<span class="fragment">Mass return fraction ($R \approx 0.3\text{--}0.5$) accounts for mass returned to ISM via stellar winds and SNe.</span>
+<span class="fragment">Mass-Dependent Star Formation Histories ("Downsizing"):</span>
+<span class="fragment">Massive Galaxies ($M_ > 10^{11} M_\odot$):* Formed the bulk of their stars in early, intense starbursts at $z > 2$ and quenched rapidly.</span>
+<span class="fragment">Low-Mass Galaxies ($M_ < 10^9 M_\odot$):* Exhibit extended, gradual star-formation histories peaking late ($z < 0.5$).</span>
+---
+
+<span class="fragment">[p "The Cosmic Baryon Cycle & Gas Reservoirs"]Evolution of Cosmic Gas ReservoirsAtomic Gas ($\text{H I}$) vs. Molecular Gas ($\text{H}_2$):</span>
+<span class="fragment">Atomic Gas ($\Omega_{\text{HI}}$): Probed by Damped Lyman-Alpha absorbers (DLAs); remains remarkably constant from $z \sim 4$ to $z = 0$.</span>
+<span class="fragment">Molecular Gas ($\Omega_{\text{H2}}$): Probed by CO rotational transitions and dust continuum; strongly tracks $\psi(z)$, peaking at $z \sim 2$.</span>
+<span class="fragment">Gas Mass Fraction Evolution ($f_{\text{gas}} \equiv M_{\text{gas}} / (M_ + M_{\text{gas}})$):*</span>
+<span class="fragment">High-$z$ star-forming disks are gas-rich ($f_{\text{gas}} \sim 50\text{--}80\%$ at $z \sim 2$).</span>
+<span class="fragment">Local spiral disks are gas-poor ($f_{\text{gas}} \lesssim 10\text{--}20\%$).</span>
+<span class="fragment">Depletion Timescale ($\tau_{\text{dep}} \equiv M_{\text{gas}} / \text{SFR}$):</span>
+<span class="fragment">Molecular gas depletion time stays relatively stable ($\tau_{\text{dep}} \sim 1\text{--}2\text{ Gyr}$) for main-sequence galaxies across redshift.</span>
+<span class="fragment">High $\psi(z)$ at Cosmic Noon is driven by larger gas reservoirs ($f_{\text{gas}}$), not higher star formation efficiency per unit gas.</span>
+
+-v-
+
+## The Galactic Equilibrium Regulator Model
+
+<span class="fragment">Baryon Budget Flow Equations:</span>
+<span class="fragment">$\frac{dM_g}{dt} = \dot{M}_{\text{in}} - \text{SFR} - \dot{M}_{\text{out}}$</span>
+<span class="fragment">Mass Loading Factor ($\eta$):</span>
+<span class="fragment">Quantifies outflow rates relative to star formation: $\dot{M}_{\text{out}} = \eta \cdot \text{SFR}$.</span>
+<span class="fragment">Scales inversely with halo mass ($\eta \propto M_*^{-0.35}$); energy-driven winds eject gas efficiently from low-mass potential wells.</span>
+<span class="fragment">Self-Regulation Regime:</span>
+<span class="fragment">Galaxies act as open systems, rapidly adjusting their SFR to balance pristine gas inflows ($\dot{M}_{\text{in}}$) with gas consumption and outflows.</span>
 
 ---
-# 3) Stellar Populations
-old, pop 1
 
----
-# 4) Locations
+[p "Chemical Enrichment & Metallicity Relations"]
 
----
-# 5) Dwarf galaxies
+<span class="fragment">Mass-Metallicity Relation (MZR) & EvolutionGas-Phase Mass-Metallicity Relation ($M_ - Z$):*</span>
+<span class="fragment">Strong correlation between galaxy stellar mass $M_*$ and gas metallicity ($12 + \log(\text{O/H})$).</span>
+<span class="fragment">Monotonic rise at low mass; flattens at $M_* \gtrsim 10^{10.5} M_\odot$ toward upper yield limits.</span>
+<span class="fragment">Redshift Evolution of the MZR:</span>
+<span class="fragment">At fixed $M_*$, gas metallicity drops systematically with increasing redshift ($\sim 0.3\text{--}0.5\text{ dex}$ drop from $z=0$ to $z \sim 2$).</span>
+<span class="fragment">Driven by higher pristine gas inflow rates ($\dot{M}_{\text{in}}$) and stronger mass-loaded outflows at high $z$.</span>
 
+-v-
+<span class="fragment">The Fundamental Metallicity Relation (FMR)The FMR 3D Surface ($M_*, \text{SFR}, Z$):</span>
+<span class="fragment">Metallicity correlates inversely with SFR at fixed stellar mass: $Z = f(M_* - \alpha \log \text{SFR})$ with $\alpha \approx 0.32$.</span>
+<span class="fragment">Inflow Bursts: Fresh gas accretion drives up SFR while diluting ISM metallicity.</span>
+<span class="fragment">Stagnant Phases: Low gas accretion leads to low SFR, allowing stellar nucleosynthesis to enrich the remaining gas.</span>
+<span class="fragment">Redshift Invariance:</span>
+<span class="fragment">Local and high-redshift galaxies ($z \lesssim 2.5$) lie on the exact same FMR surface, confirming metallicity is set by dynamic equilibrium between inflow, outflow, and SF.</span>
+
+-v-
+
+<span class="fragment">Radial Metallicity GradientsNegative Gradients in Disk Galaxies:</span>
+<span class="fragment">Inner disk regions are systematically more metal-rich than outer disks ($d[\text{O/H}]/dR < 0$).</span>
+<span class="fragment">Signature of inside-out disk assembly (higher historical star formation density in galaxy centers).</span>
+<span class="fragment">Gradient Flattening Drivers:</span>
+<span class="fragment">Bar-Driven Stirring: Central bars generate non-axisymmetric gravitational torques, forcing radial gas mixing.</span>
+<span class="fragment">Galaxy Mergers: Tidal interactions drive massive radial gas inflows, flattening metallicity gradients prior to coalescence.</span>
 ---
-# 6) Ultra-low surface brightness galaxies
+
+[p "Element Abundances & Star Formation Timelines"]
+
+<span class="fragment">$[\alpha/\text{Fe}]$ Ratios as Galactic ClocksDual Nucleosynthetic Channels:</span>
+<span class="fragment">$\alpha$-Elements (O, Mg, Si, S, Ca): Produced rapidly by Core-Collapse SNe (massive stars, timescales $\tau \lesssim 10^7\text{ yr}$).</span>
+<span class="fragment">Iron-Peak Elements (Fe, Ni): Produced primarily by Type Ia SNe (thermonuclear explosions of white dwarfs, delay time $\tau \sim 0.1\text{--}1\text{ Gyr}$).</span>
+<span class="fragment">The Chemical Clock Mechanism:</span>
+<span class="fragment">Early starbursts produce gas rich in $\alpha$-elements ($[\alpha/\text{Fe}] \approx +0.4\text{ dex}$).</span>
+<span class="fragment">After $\sim 1\text{ Gyr}$, Type Ia SNe turn on, injecting Fe and driving $[\alpha/\text{Fe}]$ down to solar values ($0.0$).</span>
+
+-v-
+# Spheroid vs. Disk Star Formation Timelines
+
+<span class="fragment">Alpha-Enhancement in Giant Ellipticals:</span>
+<span class="fragment">Massive spheroids exhibit enhanced abundances ($[\alpha/\text{Fe}] \sim +0.2\text{--}+0.3$).</span>
+<span class="fragment">Proves star formation was truncated rapidly ($\Delta t_{\text{SF}} < 1\text{ Gyr}$) before Type Ia SNe could enrich the ISM with iron.</span>
+<span class="fragment">Solar $[\alpha/\text{Fe}]$ in Disk Galaxies:</span>
+<span class="fragment">Spiral disks exhibit near-solar ratios ($[\alpha/\text{Fe}] \approx 0.0$).</span>
+<span class="fragment">Reflects extended, continuous star formation histories ($\Delta t_{\text{SF}} \gg 1\text{ Gyr}$) with fully integrated Type Ia feedback.</span>
+
+-v-
+<span class="fragment">Classical Chemical Evolution ModelsClosed-Box Model:</span>
+<span class="fragment">Assumes no gas inflow or outflow; yields $Z(t) = -p \ln f_{\text{gas}}$ (where $p$ is stellar yield).</span>
+<span class="fragment">Failure Mode: Overpredicts low-metallicity stars in local disks ("G-Dwarf Problem").</span>
+<span class="fragment">Leaky-Box Model (Outflows):</span>
+<span class="fragment">Incorporates wind ejection ($\dot{M}_{\text{out}} = \eta \cdot \text{SFR}$); reduces effective yield to $p_{\text{eff}} = \frac{p}{1+\eta}$.</span>
+<span class="fragment">Successfully reproduces low metallicities in dwarf galaxies.</span>
+<span class="fragment">Accreting-Box / Inflow Model:</span>
+<span class="fragment">Continuous accretion of pristine gas buffers ISM metallicity at a steady state ($Z \to \frac{p}{1+\eta}$); naturally solves the G-Dwarf Problem in disks.</span>
                     </textarea>
                 </section>
             </div>

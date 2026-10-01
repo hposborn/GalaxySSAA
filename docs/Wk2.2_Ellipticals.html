@@ -187,6 +187,7 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 <!-- Connects total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed ($V_{\text{max}}$):- $$L \propto V_{\text{max}}^{\alpha} \quad (\alpha \approx 3\text{--}4)$$-->
 -v-
 ### Tully-Fisher
+
 - Tully & Fisher (1977) realised that total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed
 - Assuming constant mass-to-light ratio ($M = cL$), rotational velocity defined as $\nu_{\rm max} = \sqrt{GM/R}$, and mean surface brightness $\mu = L/R^2$, what should alpha be?
 - $R^2 = G^2M^2/\nu^4_{\rm max}; hance R^2 = cG^2L^2/\nu^4_{\rm max}$
@@ -208,18 +209,33 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 - As with Tully-Fisher, Faber-Jackson can be derived by combining:
   - <span class="fragment">The **virial theorem** - e.g. using equilibrium in gravitational potential ($G M / R \propto V^2$); and</span>
   - <span class="fragment">A constant (or slowly varying) stellar mass-to-light ratio ($M/L$)</span>
-  <!-- Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
-  - Kinetic Energy is $K = 3/2 M \sigma^2$
-  - Must be balanced, e.g. $2K+U = 0$; hence $\sigma^2 = -\frac{1}{5}\frac{GM}{R}$
-  -->
+-v-
+### Derivation of Faber-Jackson I:
+- Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
+- <span class="fragment">Total kinetic energy, when derived from velocity dispersion along only the $z$ direction ($\sigma$), is $K = \frac{1}{2}M\langle v \rangle = \frac{1}{2} M (3\sigma^2) = \frac{3}{2} \sigma^2$</span>
+- <span class="fragment">In a stable bound system, the average particle sits halfway to espace velocity ($ K = 0.5|U| $); NB potential in a gravitational well is always negative</span>
+- <span class="fragment">Hence, in stable systems; $2K + U = 0$.</span>
+- <span class="fragment">Substituting gives: $\frac{6}{4} M \sigma^2 - \frac{3}{5}\frac{GM^2}{R} = 0$; $ \sigma^2 = \frac{2}{5}\frac{GM}{R}$</span>
+
+-v-
+
+### Derivation of Faber-Jackson II:
+- <span class="fragment">If M/L is constant, then we can substitute M for L, i.e. $\sigma^2 \propto -\frac{1}{5}\frac{GL}{R}$</span>
+- <span class="fragment">Removing constants: $R \propto \frac{L}{\sigma^2}$</span>
+- <span class="fragment">Total luminosity within $R$ from surface brightness is $L = 4\pi R^2 \langle I_e \rangle$</span>
+- <span class="fragment">Rearranging: $R = \sqrt{\frac{L}{4\pi \langle I_e \rangle}}$</span>
+- <span class="fragment">Substituting into previous expression $\sqrt{\frac{L}{\langle I_e \rangle}} \propto \frac{L}{\sigma^2}$, so $\frac{L}{\langle I_e \rangle} \propto \frac{L^2}{\sigma^4}$</span>
+- <span class="fragment">Assuming constant $\langle I_e \rangle$: $$L \propto \sigma^4$$</span>
+
+
 ---
 
 <h2 id="part-8" class="slide-part-title">Part 8: Scaling velocities (fundamental plane)</h2>
 
-- The brightness profiles of ellipticals  makes calculating the _total flux_ difficult
-- It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.
-- Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \langle I_e \rangle_e^{-0.66}$ - larger ellipticals have lower surface brightnesses.
-- Using both surface brightnesses ($\langle I_e \rangle_e$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \langle I_e \rangle_e^{-0.85}$.
+- <span class="fragment">The brightness profiles of ellipticals  makes calculating the _total flux_ difficult</span>
+- <span class="fragment">It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.</span>
+- <span class="fragment">Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \langle I_e \rangle_e^{-0.66}$ - larger ellipticals have lower surface brightnesses.</span>
+- <span class="fragment">Using both surface brightnesses ($\langle I_e \rangle_e$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \langle I_e \rangle_e^{-0.85}$.</span>
 - <span class="fragment">In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \langle I_e \rangle + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\text{--}-0.90$)</span>
 
 -v-
@@ -231,9 +247,11 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 - This can be thought of a third dimension to the Faber-Jackson and is a _better predictor_ of galaxy size/luminosity
 
 -v-
+
 ### Understanding the "Tilt":
-- Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.
-- The discrepancy ("tilt") reflects systematic variations in $M/L$:
+
+- <span class="fragment">Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.</span>
+- <span class="fragment">The discrepancy ("tilt") reflects systematic variations in $M/L$:</span>
   - <span class="fragment">$M/L$ of ellipticals increases with galaxy stellar mass.</span>
 
 <!--
@@ -244,21 +262,28 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 ---
 <h2 id="part-9" class="slide-part-title">Part 9: Scaling Relations (Mass-Size)</h2>
 
-- <span class="fragment">**Mass-Size Scaling ($M_* \text{--} R_e$):** Displays a structural regime shift around $M_* \sim 3 \times 10^{10} M_\odot$:</span>
-  * <span class="fragment">**Low-Mass Spheroids ($M_* < 10^{10.5} M_\odot$):** Shallow size growth ($R_e \propto M_*^{0.1\text{--}0.2}$).</span>
-  * <span class="fragment">**Massive Ellipticals ($M_* > 10^{11} M_\odot$):** Steep size expansion ($R_e \propto M_*^{0.6\text{--}0.8}$).</span>
-- <span class="fragment">**Sérsic Index Scaling ($n \text{--} L$):** Central concentration (Sérsic index $n$) scales smoothly with total luminosity ($L \propto n^3$), unifying faint dwarf ellipticals and giant ellipticals within a single structural framework.</span>
+<img src="slide_data/slide_images/mass_size_sersic_scaling.jpg" class="r-stretch" />
+
+- <span class="fragment">**Mass-Size Scaling** ( $M_* \text{--} R_e $ ): Displays a structural regime shift around $M_* \sim 3 \times 10^{10} M_\odot$:</span>
+  * <span class="fragment">**Low-Mass Spheroids** ( $ M_* < 10^{10.5} M_\odot $ ): Shallow size growth ($R_e \propto M_*^{0.1\text{--}0.2}$).</span>
+  * <span class="fragment">**Massive Ellipticals** ( $ M_* > 10^{11} M_\odot $ ): Steep size expansion ($R_e \propto M_*^{0.6\text{--}0.8}$).</span>
+- <span class="fragment">**Sérsic Index Scaling** ( $ n \text{--} L $ ): Central concentration (Sérsic index $n$) scales smoothly with total luminosity ($L \propto n^3$), unifying faint dwarf ellipticals and giant ellipticals within a single structural framework.</span>
 
 ---
 <h2 id="part-10" class="slide-part-title">Part 10: Impact of scaling relations</h2>
 
 #### Standard candles
+
 - <span class="fragment">Relations between parameters enable us to convert one observed parameter into another</span>
   - <span class="fragment">e.g. velocity disperson $\sigma$ to mass (and therefore to intrinsic luminosity).</span>
   - <span class="fragment">This can anchor a standard candle (e.g. for distance, and even $H_0$ determination)</span>
+
 <span class="fragment">#### Unresolved galaxies</span>
+
 - <span class="fragment">Enable us to apply information derived from resolved calaxies to distant galaxies without any spatial (e.g. $V$ or $\langle I_e \rangle$) information</span>
+
 <span class="fragment">#### Probe underlying physics</span>
+
 - <span class="fragment">For example, deviations of observed scaling laws from expectations as proof of unseen physics (Fundamental plane "tilt" due to increasing dark matter mass fraction in massive galaxies)</span>
 
 -v-

@@ -222,7 +222,7 @@ title: Spiral Galaxies and Morphological Classification
 - Surface Brightness Conversion: [+]
   - $\mu(R) = m_{\text{zero}} + 2.5 \log_{10} \left(\frac{\text{Area}}{\text{Flux}(R)} \right)$[+]
 - $m_{\text{zero}}$: Photometric Zero-Point (calibration constant representing magnitude of an object producing $1\text{ count/second}$)[+]
-- The **effective**, or **half-light radius** ($R_e$ or $R_{50}$): Radius enclosing $50\%$ of the galaxy's total integrated light. [+]
+- The **effective**, or **half-light radius** ($R_e$ or $R_{50}$): Radius enclosing $50%$ of the galaxy's total integrated light. [+]
 - Disk Scale Length ($h_R$): The exponential e-folding radius of a galaxy disk profile. [+]
 -  ($R_e$) is defined by the isophate containing 50% of the total flux[+]
 
@@ -248,7 +248,7 @@ title: Spiral Galaxies and Morphological Classification
 
 - Ellipticals show steep Sersic profiles ($2.5<n<10$)[+]
 - For spirals, generally $n\sim1$ (i.e. "shallow" Sérsic profiles)[+]
-- An n=1 Sersic profile = linear decrease in surface brightness (in magnitudes) as a function of radius (normalised to the disc scalelength, $R_d$): $\mu(R) = \mu_0 + 1.0857\frac{R}{R_d}[+]
+- An n=1 Sersic profile = linear decrease in surface brightness (in magnitudes) as a function of radius (normalised to the disc scalelength, $R_d$): $\mu(R) = \mu_0 + 1.0857\frac{R}{R_d}$[+]
 - Central surface brightness then probes total galactic brightness[+]
 - Galactic inclination, and any galactic bulge (Sersic profile n>1) must be corrected/removed.[+]
 
@@ -258,7 +258,7 @@ title: Spiral Galaxies and Morphological Classification
 - Spirals may have two components - a steep central bulge and a flatter disc - which compete in a single Sérsic profile.
 - Typically classical bulges may have $n\sim4$ while pseudobulges have $n~1-2$
 - **Bulge-to-disc** (B/D) or **bulge-to-total** (B/T) measurements can also be derived from a galaxy's surface brightness profile
-- Quantitatively, B/T vaires with spiral class:
+- Quantitatively, B/T varies with spiral class:
 
 |  | S0/a | Sb | Scd |
 | :--- | :---: | :---: | ---: |
@@ -280,7 +280,7 @@ title: Spiral Galaxies and Morphological Classification
 -v-
 
 ### "CAS" parameters / structures
-- **Concentration ($C$)**: Ratio of flux within $80\%$ radius to $20\%$ radius: [+]
+- **Concentration ($C$)**: Ratio of flux within 80% radius to 20% radius: [+]
   - $C = 5 \log_{10} \left( \frac{r_{80}}{r_{20}} \right)$[+]
 - **Asymmetry ($A$)**: Normalized residual flux after rotating galaxy image by $180^\circ$: [+]
   - $A = \frac{\sum \vert{}I_0 - I_{180}\vert{}}{2 \sum \vert{}I_0\vert{}}$[+]
@@ -435,7 +435,7 @@ title: Spiral Galaxies and Morphological Classification
 - **Hubble Space Telescope (HST)**:[+]
   - High-resolution deep fields (HDF, HUDF, CANDELS) established high-redshift galaxy morphology out to $z > 3$. [+]
 - **Sloan Digital Sky Survey (SDSS)**:[+]
-  - Wavelength coverage across $u,g,r,i,z$ over $35\%$ of the sky. Mapped local universe galaxy demographics ($N > 10^6$ spectra). [+]
+  - Wavelength coverage across $u,g,r,i,z$ over 35% of the sky. Mapped local universe galaxy demographics ($N > 10^6$ spectra). [+]
   - First mapped the "blue cloud" and "red sequence"[+]
 - **Dark Energy Camera (DECam / DES)**:[+]
   - Wide-field precursor imaging mapping low surface brightness tidal features and stellar halos. [+]

@@ -133,11 +133,12 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 <!-- Connects total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed ($V_{\text{max}}$):- $$L \propto V_{\text{max}}^{\alpha} \quad (\alpha \approx 3\text{--}4)$$-->
 -v-
 ### Tully-Fisher
-- Tully & Fisher (1977) realised that total optical/IR luminosity (or baryonic mass) to maximum disk rotation speed
-- Assuming constant mass-to-light ratio ($M = cL$), rotational velocity defined as $\nu_{\rm max} = \sqrt{GM/R}$, and mean surface brightness $\mu = L/R^2$, what should alpha be?
-- $R^2 = G^2M^2/\nu^4_{\rm max}; hance R^2 = cG^2L^2/\nu^4_{\rm max}$
-- So $L = \langle I_e \rangle R^2$; $L = \langle I_e \rangle cG^2L^2/\nu^4_{\rm max}$; $L = \nu^4_{\rm max}/(cG^2\langle I_e \rangle)$
-- As $c$ (mass-to-light proportionality) and $\langle I_e \rangle$ (surface brightness ratio) can be assumed constant for all spirals, $L \propto \nu^4_{\rm max}$.
+
+- Tully & Fisher (1977) realised that total optical/IR luminosity (or baryonic mass) is linked to maximum disk rotation speed[+]
+- Assuming constant mass-to-light ratio ($M = cL$), rotational velocity defined as $v_{\rm max} = \sqrt{GM/R}$, and mean surface brightness $\mu = L/R^2$, what relation should $L$ and $v$ have?[+]
+- $R^2 = G^2M^2/v^4_{\rm max}$; hence ... $R^2 = cG^2L^2/v^4_{\rm max}$[+]
+- So $L = \mu R^2$; $L = \mu cG^2L^2/v^4_{\rm max}$; $L = \nu^4_{\rm max}/(cG^2\mu)$[+]
+- As $c$ (mass-to-light proportionality) and $\mu$ (surface brightness ratio) can be assumed constant for all spirals, $L \propto v^4_{\rm max}$.[+]
 
 -v-
 
@@ -145,7 +146,7 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 
 [i=Tully_Fischer.png]
 
-- In **elliptical galaxies**, faster velocity _dispersions_ in their cores (\sigma_0) correlate with higher luminosities: $L \propto \sigma_0^\gamma \quad (\gamma \approx 4)$
+- In **elliptical galaxies**, faster velocity _dispersions_ in their cores ($\sigma_0$) correlate with higher luminosities: $L \propto \sigma_0^\gamma \quad (\gamma \approx 4)$
 - This can similarly be derived from expected velocities due to galaxy masses.
 
 -v-
@@ -154,19 +155,40 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 - As with Tully-Fisher, Faber-Jackson can be derived by combining:
   - The **virial theorem** - e.g. using equilibrium in gravitational potential ($G M / R \propto V^2$); and[+]
   - A constant (or slowly varying) stellar mass-to-light ratio ($M/L$)[+]
-  <!-- Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
-  - Kinetic Energy is $K = 3/2 M \sigma^2$
-  - Must be balanced, e.g. $2K+U = 0$; hence $\sigma^2 = -\frac{1}{5}\frac{GM}{R}$
-  -->
+-v-
+### Derivation of Faber-Jackson I:
+- Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
+- Total kinetic energy, when derived from velocity dispersion along only the $z$ direction ($\sigma$), is $K = \frac{1}{2}M\langle v \rangle = \frac{1}{2} M (3\sigma^2) = \frac{3}{2} M \sigma^2$[+]
+- In a stable bound system, the average particle sits halfway to espace velocity ($ K = \frac{1}{2}|U| $)
+- Potential in a gravitational well is always negative[+]
+- Hence, in stable systems; $K + \frac{1}{2}U = 0$.[+]
+- Substituting gives: $\frac{3}{2} M \sigma^2 - \frac{3}{10}\frac{GM^2}{R} = 0$; $ \sigma^2 = \frac{2}{5}\frac{GM}{R}$[+]
+
+-v-
+
+### Derivation of Faber-Jackson II:
+- If M/L is constant, then we can substitute M for L, i.e. $\sigma^2 \propto -\frac{1}{5}\frac{GL}{R}$[+]
+- Removing constants: $\sigma^2 \propto \frac{L}{R}$[+]
+- Total luminosity within $R$ from surface brightness is $L = 4\pi R^2 \mu$[+]
+- Rearranging: $R = \sqrt{\frac{L}{4\pi \mu}}$[+]
+- Substituting gives $ \sigma^2 \propto \frac{L}{\sqrt{L/\mu}} $, so $ \sigma^4 \propto \frac{\mu L^2}{L} \propto \mu L $[+]
+- Assuming constant $\mu$: $$L \propto \sigma^4$$[+]
+
+<!---v-
+### Derivation of Faber-Jackson II:
+[i=Tully_Fischer.png]
+- True at low masses, but appears to be untrue at high galactic mass
+- Hint that $M \propto L$ is not true for very large galaxies - they have more mass than light (and therefore more dark matter than expected).-->
+
 ---
 
 [P "Scaling velocities (fundamental plane)"]
 
-- The brightness profiles of ellipticals  makes calculating the _total flux_ difficult
-- It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.
-- Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \langle I_e \rangle_e^{-0.66}$ - larger ellipticals have lower surface brightnesses.
-- Using both surface brightnesses ($\langle I_e \rangle_e$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \langle I_e \rangle_e^{-0.85}$.
-- In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \langle I_e \rangle + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\text{--}-0.90$)[+]
+- The brightness profiles of ellipticals  makes calculating the _total flux_ difficult[+]
+- It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.[+]
+- Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \mu^{-0.66}$ - larger ellipticals have lower surface brightnesses.[+]
+- Using both surface brightnesses ($\mu$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \mu^{-0.85}$.[+]
+- In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \mu + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\text{--}-0.90$)[+]
 
 -v-
 
@@ -177,9 +199,11 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 - This can be thought of a third dimension to the Faber-Jackson and is a _better predictor_ of galaxy size/luminosity
 
 -v-
+
 ### Understanding the "Tilt":
-- Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.
-- The discrepancy ("tilt") reflects systematic variations in $M/L$:
+
+- Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.[+]
+- The discrepancy ("tilt") reflects systematic variations in $M/L$:[+]
   - $M/L$ of ellipticals increases with galaxy stellar mass. [+]
 
 <!--
@@ -190,21 +214,36 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 ---
 [P "Scaling Relations (Mass-Size)"]
 
-- **Mass-Size Scaling ($M_* \text{--} R_e$):** Displays a structural regime shift around $M_* \sim 3 \times 10^{10} M_\odot$: [+]
-  * **Low-Mass Spheroids ($M_* < 10^{10.5} M_\odot$):** Shallow size growth ($R_e \propto M_*^{0.1\text{--}0.2}$). [+]
-  * **Massive Ellipticals ($M_* > 10^{11} M_\odot$):** Steep size expansion ($R_e \propto M_*^{0.6\text{--}0.8}$). [+]
-- **Sérsic Index Scaling ($n \text{--} L$):** Central concentration (Sérsic index $n$) scales smoothly with total luminosity ($L \propto n^3$), unifying faint dwarf ellipticals and giant ellipticals within a single structural framework. [+]
+[i=Mass_Size_Relation_2_Abdullah.png]
+
+- The mass of a galaxy is intrinsically tied to its observed size (effective radius in kpc).[+]
+- Early- and late- (or elliptical and SF) galaxies display different slopes[+]
+- There is a hint of a flattening below $M_* \sim \times 10^{9.5} M_\odot$[+]
+- No evidence that galaxy environment (cluster vs "void") changes the $M\text{--}R_e$ relation.[+]
+<!--
+-v-
+
+### Sérsic Index Scaling ( $ n \text{--} L $ )
+
+[i=mass_size_sersic_scaling.png]
+
+- Central concentration (Sérsic index $n$) scales smoothly with total luminosity ($L \propto n^3$), unifying faint dwarf ellipticals and giant ellipticals within a single structural framework. [+]-->
 
 ---
 [P "Impact of scaling relations"]
 
 #### Standard candles
+
 - Relations between parameters enable us to convert one observed parameter into another[+]
   - e.g. velocity disperson $\sigma$ to mass (and therefore to intrinsic luminosity).[+]
   - This can anchor a standard candle (e.g. for distance, and even $H_0$ determination)[+]
+
 #### Unresolved galaxies[+]
+
 - Enable us to apply information derived from resolved calaxies to distant galaxies without any spatial (e.g. $V$ or $\langle I_e \rangle$) information[+]
+
 #### Probe underlying physics[+]
+
 - For example, deviations of observed scaling laws from expectations as proof of unseen physics (Fundamental plane "tilt" due to increasing dark matter mass fraction in massive galaxies)[+]
 
 -v-
