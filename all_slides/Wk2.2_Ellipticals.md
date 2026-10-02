@@ -147,7 +147,7 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 [i=Tully_Fischer.png]
 
 - In **elliptical galaxies**, faster velocity _dispersions_ in their cores ($\sigma_0$) correlate with higher luminosities: $L \propto \sigma_0^\gamma \quad (\gamma \approx 4)$
-- This can similarly be derived from expected velocities due to galaxy masses.
+- This can similarly be derived from expected velocities due to galaxy masses.[+]
 
 -v-
 ## Physical Basis
@@ -159,15 +159,15 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 ### Derivation of Faber-Jackson I:
 - Potential energy from point masses inside radius R is $U = -\frac{3}{5}\frac{GM^2}{R}$
 - Total kinetic energy, when derived from velocity dispersion along only the $z$ direction ($\sigma$), is $K = \frac{1}{2}M\langle v \rangle = \frac{1}{2} M (3\sigma^2) = \frac{3}{2} M \sigma^2$[+]
-- In a stable bound system, the average particle sits halfway to espace velocity ($ K = \frac{1}{2}|U| $)
+- In a stable bound system, the average particle sits halfway to espace velocity ($ K = \frac{1}{2}|U| $)[+]
 - Potential in a gravitational well is always negative[+]
 - Hence, in stable systems; $K + \frac{1}{2}U = 0$.[+]
-- Substituting gives: $\frac{3}{2} M \sigma^2 - \frac{3}{10}\frac{GM^2}{R} = 0$; $ \sigma^2 = \frac{2}{5}\frac{GM}{R}$[+]
+- Substituting gives: $\frac{3}{2} M \sigma^2 - \frac{3}{10}\frac{GM^2}{R} = 0$; $ \sigma^2 = \frac{1}{5}\frac{GM}{R}$[+]
 
 -v-
 
 ### Derivation of Faber-Jackson II:
-- If M/L is constant, then we can substitute M for L, i.e. $\sigma^2 \propto -\frac{1}{5}\frac{GL}{R}$[+]
+- If M/L is constant, then we can substitute M for L, i.e. $\sigma^2 \propto \frac{1}{5}\frac{GL}{R}$[+]
 - Removing constants: $\sigma^2 \propto \frac{L}{R}$[+]
 - Total luminosity within $R$ from surface brightness is $L = 4\pi R^2 \mu$[+]
 - Rearranging: $R = \sqrt{\frac{L}{4\pi \mu}}$[+]
@@ -188,7 +188,7 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 - It is easier to compute the effective radius, $R_e$, where 50% surface brightness is reached.[+]
 - Unlike spiral galaxies, the surface brightness of ellipticals varies substantially with galactic luminosity: $L \propto \mu^{-0.66}$ - larger ellipticals have lower surface brightnesses.[+]
 - Using both surface brightnesses ($\mu$) and velocity disperson ($\sigma_0$) corrects for this change: $R_e \propto \sigma_0^{1.4} \mu^{-0.85}$.[+]
-- In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \mu + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\text{--}-0.90$)[+]
+- In logarithmic quantities $\log_{10} R_e = a \log_{10} \sigma_0 + b \log_{10} \mu + c$ where $a \approx 1.2\text{--}1.4$, $b \approx -0.85\to-0.90$)[+]
 
 -v-
 
@@ -200,11 +200,20 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 
 -v-
 
+## Fundamental plane
+
+[i=fundamental_plane_2.gif]
+
+- This can be thought of a third dimension to the Faber-Jackson and is a _better predictor_ of galaxy size/luminosity
+
+-v-
+
 ### Understanding the "Tilt":
 
 - Pure Virial Theorem ($M \propto R_e \sigma_0^2$) predicts $a = 2.0, b = -1.0$.[+]
 - The discrepancy ("tilt") reflects systematic variations in $M/L$:[+]
   - $M/L$ of ellipticals increases with galaxy stellar mass. [+]
+  - Why? **Dark matter**
 
 <!--
 ## Scaling relations
