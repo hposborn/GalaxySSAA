@@ -216,9 +216,8 @@ triaxial spheroid = sausage/disc/sphere; denser cores
 
 [i=Mass_Size_Relation_2_Abdullah.png]
 
-- The mass of a galaxy is intrinsically tied to its observed size (effective radius in kpc).[+]
+- The stellar mass of a galaxy is intrinsically tied to its observed size (effective radius in kpc).[+]
 - Early- and late- (or elliptical and SF) galaxies display different slopes[+]
-- There is a hint of a flattening below $M_* \sim \times 10^{9.5} M_\odot$[+]
 - No evidence that galaxy environment (cluster vs "void") changes the $M\text{--}R_e$ relation.[+]
 <!--
 -v-
