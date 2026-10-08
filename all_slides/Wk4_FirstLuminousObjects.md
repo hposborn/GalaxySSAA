@@ -392,9 +392,10 @@ title: The First Luminous Objects and Reionization
 - Measured O & Ne lines - more metal-enriched than expected! Suggests multiple generations of star formation at $z > 14$[+]
 
 ### The [Impossible Early Galaxy](https://iopscience.iop.org/article/10.3847/0004-637X/824/1/21) Problem
-- Overabundance of luminous galaxies seen by JWST at $z = 10\text{--}15$[+]
-- Models predicted these should only form by $z = 8$[+]
-  - Requires faster halo assembly timescales, or more efficient star formation (or more massive IMF) [+]
+- Overabundance of luminous/massive galaxies at $z = 10\text{--}15$[+]
+- Models predicted these should only form by $z = 8$, but...[+]
+  - Contamination from broadened emission lines was missed[+]
+  - Top-heavy IMFs, high sSFR efficiency per burst, and dust-free environments make early galaxies unexpectedly bright [+]
 
 -v-
 
