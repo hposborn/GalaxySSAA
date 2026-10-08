@@ -48,14 +48,233 @@
 # The First Luminous Objects and Reionization
 
 ---
-## Topics covered
-1) The Cosmic Dark Ages
-2) Epoch of Reionization (EoR)
-3) Photon Budget Problem
-4) Modern Observations
-5) Little Red Dots
+
+<h2 id="part-1" class="slide-part-title">Part 1: Our deepest views of the universe</h2>
+
+__HTML_COMMENT_TOKEN_0__
+
+## $z > 5$ is Hard
+
+<div style="text-align: center; width: 100%;"><img src="../slide_data/slide_images/Atmospheric_Windows_Redshift.png" style="height: 350px;" /></div>
+- **Cosmological Redshift** ($\lambda_{\text{obs}} = \lambda_{\text{rest}} \times (1+z)$):
+  - <span class="fragment">Rest-frame optical and UV light shifts into the near- and mid-infrared ($1.5–5.0\,\mu\text{m}$).</span>
+  - <span class="fragment">Requires space-based cryogenic infrared instruments (e.g., JWST NIRCam, NIRSpec) to circumvent atmospheric thermal emission and water vapor absorption.</span>
+
+-v-
+
+## $z > 5$ is Hard
+<div style="text-align: center; width: 100%;"><img src="../slide_data/slide_images/xkcd_angular_diameter_turnaround.png" class="r-stretch" /></div>
+- **Cosmological Surface Brightness Dimming**:
+  - <span class="fragment">Surface brightness decreases as $(1+z)^{-4}$.</span>
+  - <span class="fragment">This is partly due to the "angular distance turn-around"</span>
+  - <span class="fragment">A galaxy at $z = 8$ has $\sim 6,500\times$ lower flux density per arcsec compared to $z = 0$.</span>
+
+-v-
+
+## $z > 5$ is Hard
+- <span class="fragment">**Neutral IGM Absorption** (The Gunn-Peterson Trough):</span>
+  - <span class="fragment">Neutral hydrogen in the intergalactic medium (IGM) absorbs virtually all radiation shortward of Ly$\alpha$ ($\lambda_{\text{rest}} < 1216\,\text{Å}$).</span>
+- <span class="fragment">**High-Redshift Interlopers**:</span>
+  - <span class="fragment">Low-redshift ($z \sim 1.5–2$), dusty, red galaxies mimic high-$z$ Lyman dropouts, requiring high-resolution SED fitting and infrared spectroscopy to resolve.</span>
+
+-v-
+
+## Galaxies & Morphology
+
+- We have seen clear trends with distance redshift. Galaxies in the early universe were:
+- <span class="fragment">**Much smaller**:</span>
+  - <span class="fragment">$R_e$ at $z=0$ typically 2-10kpc</span>
+  - <span class="fragment">At $z>5 this shrinks to 0.1-0.8kpc</span>
+- <span class="fragment">**Less compact**:</span>
+  - <span class="fragment">Sersic index of bulges/elliptical $n=4$ in local universe</span>
+  - <span class="fragment">Almost all galaxies show Sersic index $\sim 1$ at $z>5$ - turbulent & extended</span>
+- <span class="fragment">**Irregular**:</span>
+  - <span class="fragment">Many more irregular, clumpy galaxies without clear disc/spherical shapes</span>
+  - <span class="fragment">Due to high gas content, irregular star-forming knots</span>
+- <span class="fragment">**Dynamically turbulent**</span>
+  - <span class="fragment">Dynamical inequlibrium (esp due to mergers) common</span>
+
+-v-
+
+### Star Formation Rates
+
+- <span class="fragment">As measured by tracers of massive short-lived stars:</span>
+  - <span class="fragment">Equivalent Width ($EW(H\alpha)$ or $EW([O\text{ III}])$) tracing ionizing photons</span>
+  - <span class="fragment">UV to Optical/NIR Flux Ratio ($F_{1500} / F_{\text{NIR}}$)</span>
+- <span class="fragment">Scales sharply with redshift, reaching $\text{sSFR} \sim 10–100\,\text{Gyr}^{-1}$ at $z > 6$.</span>
+- <span class="fragment">Equivalent to galaxies doubling their stellar mass every $10–100\text{ Myr}$.</span>
+
+<span class="fragment">### Other tracers</span>
+- <span class="fragment">NUV ($1500\text{ \AA}$) luminosity traced across galaxy populations shows scatter grows with redshift</span>
+  - <span class="fragment">Traces intense **starbursts** ($\sim 10\text{ Myr}$) followed by temporary quenching phases</span>
+- <span class="fragment">Lyman-Continuum ($\text{LyC}$) Emission of ionising UV radiation bluewards of $\text{Ly}\alpha$ ($\lambda_{\text{rest}} < 912\text{ \AA}$) show blue-dominant spectra at high z</span>
+  - <span class="fragment">Point to large populations of young, metal-poor, hot massive stars ($M > 30 M_\odot$).</span>
+  - <span class="fragment">Also seen in $[O\text{ III}]$ lines (esp at $z>4$ where IGM blocks $\text{LyC}$)</span>
+
+__HTML_COMMENT_TOKEN_1__
 
 ---
+
+<h2 id="part-2" class="slide-part-title">Part 2: Recombination</h2>
+
+## Ionization basics
+- <span class="fragment">Neutral Atom: Protons in the nucleus hold negatively charged electrons in bound orbits.</span>
+- <span class="fragment">Ionization Energy: Stripping an electron from Hydrogen requires a minimum energy of $13.6\text{ eV}$ (from E = h\nu = \frac{hc}{\lambda}$; $\lambda<911{\text \AA}$)</span>
+- <span class="fragment">Ionization Process: High-energy Ultraviolet (UV) photons strike neutral Hydrogen ($H\ I$), ejecting the electron.</span>
+- <span class="fragment">Ionized State: Gas converts into a plasma of free protons and free electrons ($H\ II$).</span>
+
+-v-
+
+## The CMB
+- <span class="fragment">The universe started hot & dense, but expanding</span>
+- <span class="fragment">High temperatures meant electrons were initially unable to combine with nuclei/protons (ionized plasma)</span>
+- <span class="fragment">Thomson scattering with the sea of electrons meant photons had very short mean free paths</span>
+- <span class="fragment">Any local fluctuations in density are dispersed by radiation pressure setting up sound waves ("Baryon Acoustic Oscillations")</span>
+- <span class="fragment">The expanding universe cooled such that fewer than 1 photon per baryon had $E>13.6\text{ eV}$ (or $\lambda<911{\text \AA}$)</span>
+- <span class="fragment">Free electons could bind with protons to form neutral Hydrogen ($H\ I$) without being reionized</span>
+- <span class="fragment">The disappearance of free electrons meant photon mean free paths grew exponentially, releasing photons we can still observe as the **cosmic microwave background (CMB)**</span>
+
+-v-
+
+## The CMB
+
+<div style="text-align: center; width: 100%;"><img src="../slide_data/slide_images/cmb1.jpg" class="r-stretch" /></div>
+
+-v-
+
+## Neutral era "Cosmic Dawn"
+- <span class="fragment">Neutral $H\ I$ is transparent to photons...</span>
+  - <span class="fragment">Except photons with $\lambda<911{\text \AA}$ which are absorbed through ionization ($H\ I \to H^{+} + e^{-}$).</span>
+  - <span class="fragment">Accounting for cosmic red-shift, this means we cannot expect *any* light $<1\mu{\rm m}$ from the early universe</span>
+- <span class="fragment">However, in this initial cooling universe, there are almost no sources of photons.</span>
+  - <span class="fragment">These are the **Cosmic Dark Ages**</span>
+  - <span class="fragment">Only source was 21cm line from spin-flip transition between e$^{-}$ & H$^{+}$</span>
+
+__HTML_COMMENT_TOKEN_2__
+
+---
+
+<h2 id="part-3" class="slide-part-title">Part 3: Collapsing matter</h2>
+
+- **The Cosmic Dark Ages**
+  - Cold, dark, uniform gas (75% Hydrogen, 25% Helium) without any light sources.
+  - <span class="fragment">Limited gas overdensities due to radiation drag before recombination.</span>
+  - <span class="fragment">Dominated by dark matter which had no "drag" limiting collapse.</span>
+- <span class="fragment">**Gravitational Collapse**:</span>
+  - <span class="fragment">Dark matter overdensities began even before recombination, dominated by so-called **mini-halos** ($10^6\text{ M}_\odot$).</span>
+  - <span class="fragment">Neutral gas falls into these gravitation wells at speeds of $v_{\text{vir}} \sim 2\text{--}5\text{ km/s}$, heating the gas via shocks to $T_{\text{vir}} \sim 1000\text{ K}$.</span>
+
+---
+
+<h2 id="part-4" class="slide-part-title">Part 4: The first stars & galaxies</h2>
+
+### Forming population III Stars
+- <span class="fragment">Lack of heavy elements means neutral H cannot cool below 1000K</span>
+- <span class="fragment">Residual free electrons helps form H$_2$ molecules (small fraction), allowing rotational transitions to radiate heat ($1000\text{ K}\to200\text{ K}$; $n_H \to \sim 10^4\text{ cm}^{-3}$).</span>
+- <span class="fragment">H$_2$ cooling means the local Jeans mass ($M_J \propto T^{3/2} \rho^{-1/2}$) drops to $M_J \sim 10^2\text{--}10^3 \, M_\odot$ - self-gravitational collapse can begin.</span>
+- <span class="fragment">This may form multiple smaller dense regions via turbulence.</span>
+- <span class="fragment">At $n_H \sim 10^8\text{ cm}^{-3}$ convert all H$\to$H$_2$ (via $3H\toH_2 + H$ pathway).</span>
+- <span class="fragment">At $n_H \sim 10^{14}\text{ cm}^{-3}$, gas is optically thick to $H_2$ rovibrational lines and the core temperature rises adiabatically, forming a protostellar core ($M_{\text{proto}} \sim 10^{-2} \, M_\odot$).</span>
+- <span class="fragment">Pristine gas at 200K has a very high sound speed ($c_s \approx 1.5\text{--}2.0\text{ km/s}$) enabling rapid accretion (1-10M_sun in 1000yrs!)</span>
+- <span class="fragment">Kelvin-Helmholtz contraction during the accretion phase means the core gets hot & dense enough to begin Hydrogen fusion</span>
+- <span class="fragment">The emitted UV radiation (Ly$\alpha$ continuum) photoevaporates the surrounding accreting material, switching off accretion.</span>
+
+-v-
+
+### Forming population III Stars
+
+- A $10^6\text{ M}_\odot$ halo:
+  - <span class="fragment">Contains $M_{\rm gas} \sim 1.6\times10^5\text{ M}_\odot$ neutral hydrogen</span>
+  - <span class="fragment">Accretion efficiency of $$\epsilon_{\text{SF}} \approx 10^{-4} \text{ to } 10^{-3} \quad (0.01\% \text{ to } 0.1\%)$$ due to photo-evaporative feedback.</span>
+  - <span class="fragment">$$N_{\text{stars}} = \frac{\epsilon_{\text{SF}} \dot M_{\rm gas}}{M_{\text{Pop III}}} \lesssim \frac{1.6\times10^5 \dot {10^{-4}\text{--}10^{-3}}}{\approx 20\text{--}100 \, M_\odot$} \approx 1 \text{ to } 8 \text{ stars}$$</span>
+  - <span class="fragment">Each halo produces only one or a handful of Pop III stars!</span>
+
+-v-
+
+### Evolutionary Paths & Explosive Ends
+
+- Pop III star fates depend strictly on initial mass ($M_{\text{ZAMS}}$):
+- $10\ M_{\text{ZAMS}} \lesssim M_{\text{ZAMS}} \lesssim 140\ M_{\odot}$ — **Core-Collapse Supernovae (CCSN)**:
+  - <span class="fragment">3-10Myr main sequence lifetime</span>
+  - <span class="fragment">Standard iron-core collapse leaving a neutron star or black hole via fallback.</span>
+  - <span class="fragment">Smallest stars ($<30\ M_{\odot}$) enriches the environment with $\sim80$% up to Fe</span>
+  - <span class="fragment">Larger stars only minimally enriches the environment ($\sim20$%) with alpha elements (C, N, O).</span>
+- <span class="fragment">$140\ M_{\odot} \le M_{\text{ZAMS}} \le 260\ M_{\odot}$ — **Pair-Instability Supernovae (PISNe)**:</span>
+  - <span class="fragment">2-3Myr main sequence lifetime</span>
+  - <span class="fragment">Photon energies in the oxygen core become so high that they create electron-positron ($e^-e^+$) pairs, dropping thermal pressure and causing catastrophic collapse.</span>
+  - <span class="fragment">Triggers runaway explosive oxygen and silicon burning that completely disrupts the star, leaving no central compact remnant.</span>
+  - <span class="fragment">Massively enriches the surrounding gas, including in $^{56}$Ni which decays to Fe ($1\text{--}10$% by mass)</span>
+- <span class="fragment">$M_{\text{ZAMS}} \gtrsim 260\ M_{\odot}$ — **Direct Collapse to Black Hole**:</span>
+  - <span class="fragment"><2Myr main sequence lifetime</span>
+  - <span class="fragment">Photodisintegration steals thermal energy, leading to collapse that runaway fusion cannot halt. The star collapses directly into an intermediate-mass black hole (IMBH).</span>
+  - <span class="fragment">Little to no mass is ejected (minimal enrichment)</span>
+
+---
+
+<h2 id="part-5" class="slide-part-title">Part 5: The Epoch of Reionization (EoR)</h2>
+
+## The Three Phases of Reionization
+
+- <span class="fragment">Phase 1: **Bubble Formation**:</span>
+  - <span class="fragment">UV photons from Pop III stars and early protogalaxies ionize immediate surroundings.</span>
+  - <span class="fragment">Creates isolated spheres of $H\ II$ gas inside a vast ocean of neutral $H\ I$.</span>
+- <span class="fragment">Phase 2: **Overlap (Percolation)**:</span>
+  - <span class="fragment">Galaxies grow denser; ionized bubbles expand rapidly and merge together.</span>
+  - <span class="fragment">Ionizing photon supply exceeds the recombination rate of the Intergalactic Medium (IGM).</span>
+- <span class="fragment">Phase 3: **Post-Overlap** ($z \sim 5.5\text{--}6$):</span>
+  - <span class="fragment">Reionization finishes approximately 1 billion years after the Big Bang.</span>
+  - <span class="fragment">The Intergalactic Medium becomes fully ionized ($>99.9\%$).</span>
+- <span class="fragment">UV radiation can now travel freely across cosmic distances without being absorbed by neutral hydrogen.</span>
+
+---
+
+<h2 id="part-6" class="slide-part-title">Part 6: Simulating the Cosmic Dark Ages</h2>
+
+- <span class="fragment">Without direct observations, theory & simulations are an important tool.</span>
+- <span class="fragment">This is especially true for understanding how matter & dark matter (and Gaussian density fluctuations) produce structures.</span>
+- <span class="fragment">By simulating the cosmic dark ages, and comparing the aftermath with what we can observe in the distant universe, we can constrain underlying physics.</span>
+
+-v-
+
+## Tunable Physical Parameters
+- <span class="fragment">**Cosmological Parameters** Density parameters ($\Omega_m, \Omega_b, \Omega_\Lambda$), Hubble constant ($h$), power spectrum amplitude ($\sigma_8$), and scalar spectral index ($n_s$).</span>
+- <span class="fragment">**Dark Matter Microphysics**: Particle mass ($m_{\text{WDM}}$ in Warm Dark Matter models to set the small-scale power suppression scale), self-interaction cross-sections ($\sigma_{\text{SIDM}}$).</span>
+- <span class="fragment">**Gas Microphysics & Primordial Chemistry**: Non-equilibrium network reaction rates for species ($H, H^+, H^-, He, He^+, He^{++}, e^-, H_2, H_2^+$), molecular hydrogen ($H_2$) and HD cooling efficiencies.</span>
+- <span class="fragment">**Stellar Formation Thresholds**: Critical $H_2$ fraction, density threshold for collapse ($\rho_{\text{crit}} \sim 10^4\, \text{cm}^{-3}$), and the initial mass function (IMF) range of Population III stars ($10–1000 \, M_\odot$)</span>
+
+-v-
+
+## Benchmark Projects
+
+- The **First Stars** Simulations (Abel, Bryan, Norman / Bromm et al. late 90s): Pioneer high-resolution collapse simulations establishing Pop III star formation in DM mini-haloes.
+- The **Millenium Simulation** (Springel 2005): $10^{10}$ purely dark matter particles. Updated in 2009 at higher resolution.
+<div style="text-align: center; width: 100%;"><iframe width="700" height="394" src="https://www.youtube.com/embed/yyfpFfWq7Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; display: block; margin: 0 auto; class="r-stretch""></iframe></div>
+
+-v-
+
+## Benchmark Projects
+- The **Renaissance Simulations** (Enzo): Ultra-high-resolution Adaptive Mesh Refinement (AMR) simulations exploring Population III/II star formation & early galaxy assembly. Suggested that low-mass, ultra-faint dwarf galaxies supplied most ionizing photons.
+- **CoDa** (Cosmic Dawn) Series (RAMSES-CORTEX): Fully coupled GPU-accelerated radiation-hydrodynamics simulations tracking the joint evolution of gas, stars, and ionizing radiation field.
+- **Flamingo** (Schaye et al. 2023): Largest-scale simulations (2.8Gpc) directly constraining upcoming survey observations (Euclid, Rubin, DESI, Roman)
+
+-v-
+
+## Benchmark Projects (CoDa)
+<div style="text-align: center; width: 100%;"><iframe width="700" height="394" src="https://www.youtube.com/embed/zeqV3WL06T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; display: block; margin: 0 auto; class="r-stretch""></iframe></div>
+
+---
+
+<h2 id="part-7" class="slide-part-title">Part 7: Observations of Neutral Hydrogen</h2>
+## Gunn-Peterson Trough
+
+-v-
+
+## 21cm line
+
+__HTML_COMMENT_TOKEN_3__
+
+
+__HTML_COMMENT_TOKEN_4__
                     </textarea>
                 </section>
             </div>

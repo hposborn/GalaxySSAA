@@ -1,8 +1,20 @@
 import re
 
 def preprocess(md: str) -> str:
+    # Protect HTML comments (<!-- ... -->) using a robust dictionary lookup
+    # Protect HTML comments (<!-- ... -->) using a properly scoped counter
+    comments = {}
+    comment_counter = 0
 
-# 1. Handle line-by-line [+] fragments safely, preserving indentation & lists
+    def comment_replacer(match):
+        nonlocal comment_counter
+        key = f"__HTML_COMMENT_TOKEN_{comment_counter}__"
+        comments[key] = match.group(0)
+        comment_counter += 1
+        return key
+
+    md = re.sub(r'<!--[\s\S]*?-->', comment_replacer, md)
+    # 1. Handle line-by-line [+] fragments safely, preserving indentation & lists
     new_lines = []
     for line in md.split('\n'):
         if '[+]' in line:
@@ -91,25 +103,47 @@ def preprocess(md: str) -> str:
         md
     )
     # Helper for local vs external images (handles optional quotes automatically)
-    def create_img_tag(match, extra_attrs):
-        path = match.group(1).strip().strip('"\'')
-        if path.startswith('http'):
-            src = path
-        else:
-            src = f'slide_data/slide_images/{path}'
-        return f'<img src="{src}" {extra_attrs} />'
+    def create_media_tag(match, extra_attrs):
+        raw_path = match.group(1).strip().strip('"\'')
 
+        # 1. Check if it's a YouTube URL
+        youtube_match = re.search(r'(?:v=|youtu\.be\/|embed\/)([a-zA-Z0-9_-]{11})', raw_path)
+        if youtube_match:
+            video_id = youtube_match.group(1)
+            # Standard responsive iframe wrapper for slides
+            return f'<div style="text-align: center; width: 100%;"><iframe width="700" height="394" src="https://www.youtube.com/embed/{video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; display: block; margin: 0 auto; {extra_attrs}"></iframe></div>'
+
+        # 2. Handle standard local/external files
+        if raw_path.startswith('http'):
+            src = raw_path
+        else:
+            src = f'../slide_data/slide_images/{raw_path}'
+
+        # 3. Check if it's a regular video file
+        video_extensions = ('.mp4', '.webm', '.ogg', '.mov')
+        if raw_path.lower().endswith(video_extensions):
+            return f'<div style="text-align: center; width: 100%;"><video src="{src}" controls autoplay loop muted {extra_attrs}></video></div>'
+        else:
+            # 4. Default to image
+            return f'<div style="text-align: center; width: 100%;"><img src="{src}" {extra_attrs} /></div>'
     # 4. Handle [i=...] image macro (full stretch, with or without quotes)
     md = re.sub(
         r'\[i=[\'"]?([^\]\'"]+)[\'"]?\]',
-        lambda m: create_img_tag(m, 'class="r-stretch"'),
+        lambda m: create_media_tag(m, 'class="r-stretch"'),
         md
     )
 
     # 5. Handle [ism=...] image macro (350px height, with or without quotes)
     md = re.sub(
         r'\[ism=[\'"]?([^\]\'"]+)[\'"]?\]',
-        lambda m: create_img_tag(m, 'style="height: 350px;"'),
+        lambda m: create_media_tag(m, 'style="height: 350px;"'),
+        md
+    )
+
+    # + Handle [ifull=...] image macro (full screen / max slide height coverage)
+    md = re.sub(
+        r'\[ifull=[\'"]?([^\]\'"]+)[\'"]?\]',
+        lambda m: create_media_tag(m, 'style="width: 100%; max-height: 620px; object-fit: contain; display: block; margin: 0 auto;"'),
         md
     )
 
@@ -139,4 +173,8 @@ def preprocess(md: str) -> str:
         return f'<h2 id="part-{num}" class="slide-part-title">Part {num}: {title}</h2>'
 
     md = part_pattern.sub(replace_part, md)
+
+    # 8. Restore the original HTML comments safely
+    for key, comment in comments.items():
+        md = md.replace(key, comment)
     return md
