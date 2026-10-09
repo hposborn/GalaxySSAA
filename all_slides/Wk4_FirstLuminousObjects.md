@@ -167,9 +167,15 @@ title: The First Luminous Objects and Reionization
 
 -v-
 
+### Evolutionary Paths & Explosive Ends
+
+- Pop III star fates depend strictly on initial mass ($M_{\text{ZAMS}}$)
+
+[ifull=https://upload.wikimedia.org/wikipedia/commons/1/18/Remnants_of_single_massive_stars.svg]
+
+-v-
 ### Evolutionary Paths & Explosive Ends - low-mass
 
-- Pop III star fates depend strictly on initial mass ($M_{\text{ZAMS}}$):
 - $10\ M_{\text{ZAMS}} \lesssim M_{\text{ZAMS}} \lesssim 140\ M_{\odot}$ — **Core-Collapse Supernovae (CCSN)**:[+]
   - 3-10Myr main sequence lifetime[+]
   - Standard iron-core collapse leaving a neutron star or black hole via fallback.[+]
@@ -400,8 +406,8 @@ title: The First Luminous Objects and Reionization
 -v-
 
 ### Rapid Black Hole creation
-- SMBHs at $z > 8$ seen from dynamics (e.g. AGN emission line profiles) in CEERS-1019 ($z = 8.68$) & GN-z11 ($z = 10.6$)
-  - These require a SMBH mass ratio 10-100x than local universe ($1\%\text{--}10\%$).[+]
+- Measurements of dynamical masses (e.g. AGN emission line profiles) imply large black holes  in [Abell 2744-QSO1](https://www.nature.com/articles/s41586-026-10579-4) ($z=7.04$, $5\times10^{7}M_\odot$), [CEERS-1019](https://ui.adsabs.harvard.edu/link_gateway/2023ApJ...953L..29L/PUB_HTML) ($z = 8.68$, $10^{7}M_\odot$) & [GN-z11](https://www.nature.com/articles/s41586-024-07052-5) ($z = 10.6$, $2\times10^{6}M_\odot$)
+  - Requires SMBH mass ratios of $1\%\text{--}10\%$, $>$10-100x than local universe.[+]
 - Shows SMBHs grew *faster than their host galaxies* - evidence for *heavy seed* formation models[+]
 
 -v-
@@ -449,7 +455,7 @@ title: The First Luminous Objects and Reionization
 ---
 
 # Resources
-- Various videos from Dr Becky [JWST](https://www.youtube.com/watch?v=Qu15C28QW8c), [Massive galaxies](https://www.youtube.com/watch?v=hmkyF1tNFc4), [LRDs as enshrouded BH](https://youtu.be/eQRUcAzktXU?si=2C6epnfAA9V_ilh6&t=766)
+- Various videos from Dr Becky [JWST](https://www.youtube.com/watch?v=Qu15C28QW8c), [Massive galaxies](https://www.youtube.com/watch?v=hmkyF1tNFc4), [LRDs as enshrouded BH](https://youtu.be/eQRUcAzktXU?si=2C6epnfAA9V_ilh6&t=766), and [Sixty Symbols](https://www.youtube.com/watch?v=00BL35sKJfY)
 - Richard Larson SciAm [article on first stars](https://www.astro.yale.edu/larson/papers/SciAm01.pdf)
 - [Astrobites posts on reionization](https://astrobites.org/2013/07/14/astrophysical-classics-neutral-hydrogen-in-the-universe-part-1/)
 - [Naidu/LRD Nature general article](https://www.nature.com/articles/d41586-026-02290-1)
