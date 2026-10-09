@@ -117,7 +117,7 @@ def preprocess(md: str) -> str:
         if raw_path.startswith('http'):
             src = raw_path
         else:
-            src = f'../slide_data/slide_images/{raw_path}'
+            src = f'slide_data/slide_images/{raw_path}'
 
         # 3. Check if it's a regular video file
         video_extensions = ('.mp4', '.webm', '.ogg', '.mov')
